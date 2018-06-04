@@ -1,0 +1,146 @@
+/*时间选则器 star*/
+.select_time {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    background-color: #F4F4F4;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.select_time .sel_container {
+    width: 34%;
+    height: 28px;
+    float: left;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0;
+}
+.sel_container input {
+    width: 72%;
+    border: none;
+    color: #606060;
+    font-size: 12px;
+    text-indent: 10px;
+    height: 28px;
+    float: left;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+    /*background-color: #F7F7F7!important;*/
+}
+.icon_time {
+    width: 14px;
+    height: 14px;
+    float: right;
+    margin-right: 7px;
+    background-image: url("../images/bill/icon_time.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 5px;
+}
+.select_time em {
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 14px;
+    line-height: 24px;
+    float: left;
+}
+.btn_time {
+    width: 20%;
+    height: 30px;
+    float: right;
+    border: none;
+    background-color: #FFB369;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.time_limit {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #fff;
+}
+.time_limit>em {
+    float: left;
+    padding-left: 3%;
+    font-size: 14px;
+    margin-right: 14px;
+}
+.time_limit .tl_style {
+    width: 30%;
+    float: left;
+    margin-right: 10%;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+.time_limit label {
+    width: 20%;
+    float: left;
+    margin-top: 3px;
+}
+.time_limit label input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    width: 16px;
+    height: 20px;
+    cursor: pointer;
+    background: url(../images/static/radio.png) no-repeat;
+    vertical-align: middle;
+    background: none\9;
+    background: none\0;
+    float: left;
+}
+.time_limit label input:checked {
+    width: 16px;
+    background: url(../images/static/radio_check.png) no-repeat;
+    background: none\9;
+    background: none\0;
+}
+.time_limit label em {
+    font-size: 14px;
+    margin-left: 7px;
+    float: left;
+    line-height: 16px;
+}
+.tl_style input {
+    width: 35%;
+    border: none;
+    background-color: #F5F5F5;
+}
+.tl_style i.icon-caret {
+    color: #F52D39;
+    float: right;
+}
+/*时间选则器 end*/
+/*响应式调整*/
+@media only screen and (max-width: 320px) {
+
+}
+@media(min-width:321px) and (max-width: 360px) {
+}
+@media(min-width:361px) and (max-width: 375px) {
+
+}
+@media (min-width:376px) and (max-width: 414px) {
+    .icon_time {
+        margin-top: 8px    }
+}
+@media(min-width:415px) and (max-width: 480px) {
+
+}
+@media (min-width:481px) and (max-width: 640px) {
+}

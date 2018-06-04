@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>withyou</display-name>
+  <welcome-file-list>
+    <welcome-file>login_stu.html</welcome-file>
+  </welcome-file-list>
+  	<filter>
+		<filter-name>StuFilter</filter-name>
+		<filter-class>com.withyou.filter.StuFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>StuFilter</filter-name>
+		<url-pattern>/html/stu/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>EngiFilter</filter-name>
+		<filter-class>com.withyou.filter.EngiFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EngiFilter</filter-name>
+		<url-pattern>/html/engineer/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>TeacFilter</filter-name>
+		<filter-class>com.withyou.filter.TeacFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>TeacFilter</filter-name>
+		<url-pattern>/html/teacher/*</url-pattern>
+	</filter-mapping>
+	
+</web-app>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-25 0:38:36 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.withyou.bean.assignment" table="T_ASSIGNMENT">
+        <id name="assid" type="java.lang.String">
+            <column name="ASSID" />
+            <generator class="assigned" />
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="CONTENT" />
+        </property>
+        <property name="classid" type="java.lang.String">
+            <column name="CLASSID" />
+        </property>
+        <property name="uptime" type="java.lang.String">
+            <column name="UPTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

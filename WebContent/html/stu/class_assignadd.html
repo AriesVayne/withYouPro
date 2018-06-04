@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="../../css/sui/reset.css">
+
+<link rel="stylesheet" href="../../css/teacher/class_infoadd.css" media="screen" type="text/css" />
+<title>通知消息</title>
+</head>
+<body>
+<div class="top_navi">
+    <h1 onclick="javascript:history.back(-1);">返回</h1>
+    <!--<img src="../../img/teacher/icon_add.png">-->
+    <span style="margin-left: -7%">添加作业</span>
+</div>
+<div class="content">
+    <ul>
+        <li>
+            <div class="left">
+                <span>作业题目</span>
+            </div>
+            <div class="right">
+                <input id="title" type="text" placeholder="请输入作业标题">
+            </div>
+        </li>
+
+        <li class="infocontent">
+            <div class="left">
+                <span>作业内容</span>
+            </div>
+            <div class="right">
+                <textarea id="content">
+
+                </textarea>
+            </div>
+        </li>
+        <form action="doClass" method="post" enctype="multipart/form-data" data-ajax="false"  name="form1">
+        	<li class="infocontent">
+            <div class="left">
+                <span>请选择文件</span>
+            </div>
+            <div class="right">
+            	<input type="file" name="fileField" id="fileField" />
+            </div>
+        <button class="btn_lessadd">提交</button>
+        </li>
+        </form>
+    </ul>
+</div>
+</body>
+<script type='text/javascript' src='../../js/jquery/jquery-3.3.1.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='../../js/stu/class/class_assignadd.js' charset='utf-8'></script>
+<script type='text/javascript' src='../../js/sui/comm.js' charset='utf-8'></script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="../../css/sui/reset.css">
+<link rel="stylesheet" href="../../css/teacher/class_fileupload.css" media="screen" type="text/css" />
+<title>在线课堂</title>
+</head>
+<body>
+<div class="top_navi">
+    <h1 onclick="javascript:history.back(-1);">返回</h1>
+    <!--<img src="../../img/teacher/icon_add.png">-->
+    <span style="margin-left: -11%">课件上传</span>
+</div>
+<div class="content">
+	<form action="doClass" method="post" enctype="multipart/form-data" data-ajax="false"
+		  name="form1">
+		<ul>
+				<li>
+					<div class="left_img">
+						<!--<img src="../../img/teacher/class_resources.png">-->
+						<span>请输入课件名称</span>
+
+					</div>
+					<div class="mid_content">
+						<input type="text" id="varResName">
+					</div>
+					<!--<div class="right_time">-->
+						<!--<span>2018-01-01</span>-->
+					<!--</div>-->
+				</li>
+				<li>
+					<div class="left_img">
+						<!--<img src="../../img/teacher/class_resources.png">-->
+						<span>请选择文件</span>
+
+					</div>
+					<div class="mid_content">
+						<input type="file" name="fileField" id="fileField" />
+					</div>
+					<!--<div class="right_time">-->
+						<!--<span>2018-01-01</span>-->
+					<!--</div>-->
+				</li>
+		</ul>
+	</form>
+	<input class="button_fileup" type="button" value="提交">
+</div>
+<script type='text/javascript' src='../../js/jquery/jquery-3.3.1.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='../../js/stu/class/class_fileupload.js' charset='utf-8'></script>
+<script type='text/javascript' src='../../js/sui/comm.js' charset='utf-8'></script>
+</body>
+</html>

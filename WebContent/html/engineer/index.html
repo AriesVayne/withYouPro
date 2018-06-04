@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工单处理</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/sui/reset.css">
+    <!--sui mobile-->
+    <link rel="stylesheet" href="../../css/sui/sm.min.css">
+    <link rel="stylesheet" href="../../css/sui/sm-extend.min.css">
+    <link rel="stylesheet" href="../../css/sui/timesection.css">
+    <link rel="stylesheet" href="../../css/engineer/index.css">
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示
+    <div class="page" id="main_screen">
+	<!-- 
+        <header class="bar bar-nav">
+            <span class="icon icon-left pull-left"> 返回</span>
+
+            <a class="external" href="../?ctl=serv&mod=serv&act=notification">
+                <span class="icon pull-right header_info" state="1" ></span>
+            </a>
+
+            <a class="external" href="../?ctl=sa&mod=sa&act=shopSearch">
+                <span class="icon pull-right icon_sear" ></span>
+            </a>
+            <h1 class="title">商家管理</h1>
+        </header>
+        <nav class="bar bar-tab">
+            <a class="tab-item external " href="{IndexButton}" title="首页" >
+                <img src="../sys4/tpl2/res/images/comm/tab_index.png" alt="">
+                <span class="tab-label">首页</span>
+            </a>
+            <a class="tab-item external active" href="{SaShopButton}" title="商家" >
+                <img src="../sys4/tpl2/res/images/comm/tab_shop_active.png" alt="">
+                <span class="tab-label">商家</span>
+            </a>
+            <a class="tab-item external" href="{SaWalletButton}" title="钱包">
+                <img src="../sys4/tpl2/res/images/comm/tab_wallet.png" alt="">
+                <span class="tab-label">钱包</span>
+            </a>
+            <a class="tab-item external" href="{SaMineButton}" title="我的">
+                <img src="../sys4/tpl2/res/images/comm/tab_mine.png" alt="">
+                <span class="tab-label">我的</span>
+            </a>
+        </nav>
+		-->
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <div class="sum_top">
+                <div class="sum_center" id="saSnapinfoQuery" data-url="{saSnapinfoQuery}">
+                    <div class="shop_num">
+                        <span>
+                            <em ></em><i id="work_num">0单</i>
+                        </span>
+                    </div>
+                    <div class="control_panel">
+                        <span class="lt">
+                            <em>已处理 <i id="done_num">0</i> 单</em>
+                        </span>
+                        <span class="mid">
+                            <em>筛选条件</em>
+                        </span>
+                        <span class="rt">
+                            <em>待处理 <i class="reds" id="undone_num">0</i>单</em>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="filter_panel main_panel">
+                <span class="filter_state"><em>处理状态<i class="icon icon-down"></i></em></span>
+                <span class="filter_data"> <em>选择日期<i class="icon icon-down"></i></em></span>
+            </div>
+            <div class="list_title">
+                <em>全部</em>
+                <s class="lt_sum"></s>
+                <i class="time"></i>
+            </div>
+            <div class="list_container" data-url={shopDetail}>
+                <ul id="shopListAdvancedQuery" data-url="{shopListAdvancedQuery}">
+                    <li>
+	                    <i class="icon_cube red">修</i>
+	                    <div class="lt">
+		                    <h5>洗脸盆损坏</h5>
+		                    <s>大王，前方小弟传来报道，8号教学楼洗脸盆坏了</s>
+	                    </div>
+	                    <div class="lt">
+	                   	 <s id="time_l">2019-02-02 19:22</s>
+	                    </div>
+	                    <div class="rt">
+		                    <a href="tel:15168870729">
+		                    <img src="../../img/engineer/icon_repair.png" alt="">
+	                    </a>
+	                    </div>
+                    </li>
+                </ul>
+                <div class="infinite-scroll-preloader" style="display: block;">
+                    <!--<h5 class="bottom_pull">向上滑动加载</h5>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services Popup -->
+<div class="popup pop_style ">
+    <div class="pop_header"></div>
+    <div class="content-block">
+        <div class="filter_panel">
+            <span class="filter_state"><em>处理状态<i class="icon icon-down"></i></em></span>
+            <span class="filter_data"><em>选择日期<i class="icon icon-down"></i></em></span>
+        </div>
+        <div class="filter_container">
+            <div class="tabs tab1">
+                <ul>
+                    <li class="active">全部状态</li>
+                    <li>已处理</li>
+                    <li>待处理</li>
+                    <li>已驳回</li>
+                </ul>
+            </div>
+            <div class="tabs tab2">
+                <div class="select_time" id="main_page_time">
+                    <div class="sel_container">
+                        <input type="text" id="balance_start" placeholder="开始时间" value="" readonly="" def="{bt}">
+                        <i class="icon_time"></i>
+                    </div>
+                    <em>至</em>
+                    <div class="sel_container">
+                        <input type="text" id="balance_end" placeholder="结束时间" value="" readonly="" def="{et}">
+                        <i class="icon_time"></i>
+                    </div>
+                </div>
+                <div class="time_btn_container">
+                    <button class="lt_btn reset_btn">默认</button>
+                    <button class="lt_btn clear_btn">置空</button>
+                    <button class="rt_btn confirm_time_btn">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='../../js/sui/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='../../js/sui/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src="../../js/sui/comm.js" charset='utf-8'></script>
+<script type='text/javascript' src="../../js/sui/func.js" charset='utf-8'></script>
+<script type='text/javascript' src="../../js/mobile/timesection.js" charset='utf-8'></script>
+<script type='text/javascript' src="../../js/engineer/index.js" charset='utf-8'></script>
+<script src="https://s22.cnzz.com/z_stat.php?id=1271731599&web_id=1271731599" language="JavaScript"></script></body>
+</html>

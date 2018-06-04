@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工单详情</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/sui/reset.css">
+    <!--sui mobile-->
+   <link rel="stylesheet" href="../../css/sui/sm.min.css">
+    <link rel="stylesheet" href="../../css/sui/sm-extend.min.css">
+    <link rel="stylesheet" href="../../css/sui/timesection.css">
+    <link rel="stylesheet" href="../../css/engineer/repairdetail.css">
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!--单个page ,第一个.page默认被展示-->
+    <div class="page" id="main_screen">
+        <header class="bar bar-nav">
+            <span class="icon icon-left pull-left"> 返回</span>
+            <a class="external" href="../?ctl=serv&mod=serv&act=notification">
+                <span class="icon pull-right header_info" state="1" ></span>
+            </a>
+            <a class="external" href="../?ctl=sa&mod=sa&act=shopSearch">
+                <span class="icon pull-right icon_sear" ></span>
+            </a>
+            <h1 class="title">工单详情</h1>
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <div class="repair_content">
+                <ul>
+                   <li id="people">
+                        <span>报修人: </span>
+                        <em>吕晓明</em>
+                    </li>
+                    <li id="phone">
+                        <span>联系电话:</span>
+                        <em>17854100989</em>
+                    </li>
+                    <li id="location">
+                        <span>故障地点:</span>
+                        <em>3号教学楼103</em>
+                    </li>
+                    <li id="device">
+                        <span>故障设备:</span>
+                        <em>投影仪</em>
+                    </li>
+                    <li id="status">
+                        <span>当前状态:</span>
+                        <em>未解决</em>
+                    </li>
+
+                    <div class="desc_detail">
+                       <li id="faultimg">
+                            <span>故障图片:</span>
+                            <img src="">
+                        </li>
+                       <li id="faultdesc">
+                            <span>故障描述:</span>
+                            <textarea readonly>突然就不能用了，咋回事呢突然就不能用了</textarea>
+                        </li>
+                    </div>
+                    <li>
+                        <span>选择状态:</span>
+                        <select id="opeartion">
+                            <option value="1">请选择</option>
+                            <option value="0">解决</option>
+                            <option value="2">关闭</option>
+                        </select>
+                    </li>
+                   <div class="desc_detail">
+                        <li id="feedback">
+                            <span>操作回执:</span>
+                            <textarea ></textarea>
+                        </li>
+                    </div>
+                    <li>
+                        <button>提交</button>
+                    </li>
+                </ul>
+             
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='../../js/sui/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='../../js/sui/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src="../../js/sui/comm.js" charset='utf-8'></script>
+<script type='text/javascript' src="../../js/sui/func.js" charset='utf-8'></script>
+<script type='text/javascript' src="../../js/mobile/timesection.js" charset='utf-8'></script>
+<script type='text/javascript' src="../../js/engineer/detail.js" charset='utf-8'></script>
+<script src="https://s22.cnzz.com/z_stat.php?id=1271731599&web_id=1271731599" language="JavaScript"></script></body>
+</html>

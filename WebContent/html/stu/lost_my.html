@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的招领</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--sui mobile-->
+    <link rel="stylesheet" type="text/css" href="../../css/stu/repair/stu_index.css" />
+    <link rel="stylesheet" href="../../css/sui/sm.min.css">
+    <link rel="stylesheet" href="../../css/sui/sm-extend.min.css">
+    
+	<!-- 浮动菜单所需css -->
+	<link rel="stylesheet" href="../../css/stu/index/reset.css">
+	<link rel="stylesheet" href="../../css/stu/index/index.css" media="screen" type="text/css" />
+	    
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+		<div class="page" id="main_screen">
+			
+			<!-- 这里是页面内容区 -->
+			<div class="content">
+				<div class="radmenu">
+					<a href="#" class="show">Menu</a>
+					<ul>
+						<li><a href="#" class="">报修</a>
+							<ul>
+								<li><a href="repair_handle.html">发布报修</a></li>
+								<li><a href="repair_my.html">查看报修</a></li>
+							</ul></li>
+						<li><a href="#">失物</a>
+							<ul>
+								<li><a href="lost_handle.html">发布失物</a></li>
+								<li><a href="lost_my.html">查看失物</a></li>
+							</ul></li>
+						<li><a href="#">课堂</a>
+							<ul>
+								<li><a href="#">在线签到</a></li>
+								<li><a href="#">我的课程</a></li>
+							</ul></li>
+					</ul>
+				</div>
+				<div class="top_container">
+					<img src="../../img/stu/back_lost.jpg" alt="">
+				</div>
+				<div class="buttons-tab">
+					<a id="button_1" href="#tab1" class="tab-link active button">全部</a> 
+					<a id="button_2" href="#tab2" class="tab-link button">我的失物</a>
+					<a id="button_3" href="#tab3"	class="tab-link button">我的招领</a>
+				</div>
+				<div class="content-block">
+					<div class="tabs">
+						<div id="tab1" class="tab active">
+							<div class="content-block">
+								<div class="list_container">
+									<ul id="shopListAdvancedQuery"
+										data-url="{shopListAdvancedQuery}">
+										<a href="repairdetail.html?uuid=asfdsafd" class="external">
+											<li><i class="icon_cube red">拾</i>
+												<div class="lt">
+													<h5>黑色普拉达一只</h5>
+													<s>锃光瓦亮的黑色普拉达一只，会笑</s>
+												</div>
+												<div class="lt">
+													<!-- <h5>2017</h5> -->
+													<s id="time_l">2018-05-16 09:20</s>
+												</div>
+
+												<div class="rt">
+													<a href="tel:15168870729"> <img
+														src="../../img/stu/icon_res.png" alt="">
+													</a>
+												</div>
+												</li>
+										</a>
+									</ul>
+									<div class="infinite-scroll-preloader" style="display: block;">
+										<!--<h5 class="bottom_pull">向上滑动加载</h5>-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="tab2" class="tab">
+							<div class="content-block">
+								<div class="list_container">
+									<ul id="shopListAdvancedQuery" data-url="{shopListAdvancedQuery}">
+
+									</ul>
+									<div class="infinite-scroll-preloader" style="display: block;">
+										<!--<h5 class="bottom_pull">向上滑动加载</h5>-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="tab3" class="tab">
+							<div class="content-block">
+								<div class="list_container">
+									<ul id="shopListAdvancedQuery" data-url="{shopListAdvancedQuery}">
+									</ul>
+									<div class="infinite-scroll-preloader" style="display: block;">
+										<!--<h5 class="bottom_pull">向上滑动加载</h5>-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<script type='text/javascript' src='../../js/sui/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='../../js/sui/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src="../../js/sui/comm.js" charset='utf-8'></script>
+<script type='text/javascript' src="../../js/sui/func.js" charset='utf-8'></script>
+<!-- 浮动菜单所需js -->
+<script type='text/javascript' src="../../js/stu/index/index.js" charset='utf-8'></script>
+<script type='text/javascript' src="../../js/stu/lost/stu_mylost.js" charset='utf-8'></script>
+
+<script src="https://s13.cnzz.com/z_stat.php?id=1271731732&web_id=1271731732" language="JavaScript"></script></body>
+</html>

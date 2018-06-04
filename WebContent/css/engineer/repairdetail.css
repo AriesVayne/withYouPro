@@ -1,0 +1,82 @@
+.repair_content{
+    width: 100%;
+    height: 600px;
+}
+.repair_content ul{
+    width: 100%;
+    height: 400px;
+}
+.repair_content ul li{
+    width: 100%;
+    height: 44px;
+    margin-top: 1px;
+    /* border-bottom: 1px solid #4c4c4c; */
+    background-color: #FFFFFF;
+}
+.repair_content ul li span{
+    width: 24%;
+    height: 40px;
+    text-align: right;
+    display: block;
+    font-size: 14px;
+    margin-left: 4%;
+    color: #333333;
+    float: left;
+    line-height: 40px;
+}
+.repair_content ul li button{
+    width: 90%;
+    margin-left: 5%;
+    background: #FF9300;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.repair_content ul li select{
+    float: left;
+    direction: rtl;
+    position: relative;
+    border: none;
+    color: #a11111;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 5%;
+    background: transparent;
+    -webkit-appearance: none;
+}
+.repair_content ul li em{
+    width: 67%;
+    height: 25px;
+    margin-top: 8px;
+    margin-right: 4%;
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #333333;
+    border: none;
+    text-align: left;
+    padding-left: 4%;
+    line-height: 25px;
+}
+.repair_content ul .desc_detail{
+    width: 100%;
+    /*height: 160px;*/
+}
+.repair_content ul .desc_detail li{
+    width: 100%;
+    height: 180px;
+    margin-top: 1px;
+    /* border-bottom: 1px solid #4c4c4c; */
+    background-color: #FFFFFF;
+}
+.repair_content ul li img{
+    width: 200px;
+    height: 140px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.repair_content ul li textarea{
+    margin-left: 4%;
+    height: 140px;
+    width: 60%;
+    margin-top: 14px;
+}

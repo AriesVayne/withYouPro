@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-20 13:28:30 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.withyou.bean.lostres" table="T_LOSTRES">
+        <id name="uuid" type="java.lang.String">
+            <column name="UUID" />
+            <generator class="assigned" />
+        </id>
+        <property name="resname" type="java.lang.String">
+            <column name="RESNAME" />
+        </property>
+        <property name="restype" type="java.lang.String">
+            <column name="RESTYPE" />
+        </property>
+        <property name="uploadid" type="java.lang.String">
+            <column name="UPLOADID" />
+        </property>
+        <property name="resfeature" type="java.lang.String">
+            <column name="RESFEATURE" />
+        </property>
+        <property name="respicpath" type="java.lang.String">
+            <column name="RESPICPATH" />
+        </property>
+        <property name="picktime" type="java.lang.String">
+            <column name="PICKTIME" />
+        </property>
+        <property name="picklocale" type="java.lang.String">
+            <column name="PICKLOCALE" />
+        </property>
+        <property name="resflag" type="java.lang.String">
+            <column name="RESFLAG" />
+        </property>
+        <property name="pickname" type="java.lang.String">
+            <column name="PICKNAME" />
+        </property>
+        <property name="pickphone" type="java.lang.String">
+            <column name="PICKPHONE" />
+        </property>
+        <property name="owername" type="java.lang.String">
+            <column name="OWERNAME" />
+        </property>
+        <property name="owerphone" type="java.lang.String">
+            <column name="OWERPHONE" />
+        </property>
+        <property name="uploadtime" type="java.lang.String">
+            <column name="UPLOADTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

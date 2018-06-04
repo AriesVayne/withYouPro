@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-24 10:20:21 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.withyou.bean.classinfo" table="T_CLASSINFO">
+        <id name="uuid" type="java.lang.String">
+            <column name="UUID" />
+            <generator class="assigned" />
+        </id>
+        <property name="imgpath" type="java.lang.String">
+            <column name="IMGPATH" />
+        </property>
+        <property name="classname" type="java.lang.String">
+            <column name="CLASSNAME" />
+        </property>
+        <property name="teacherid" type="java.lang.String">
+            <column name="TEACHERID" />
+        </property>
+        <property name="teachername" type="java.lang.String">
+            <column name="TEACHERNAME" />
+        </property>
+        <property name="grade" type="java.lang.String">
+            <column name="GRADE" />
+        </property>
+        <property name="major" type="java.lang.String">
+            <column name="MAJOR" />
+        </property>
+        <property name="college" type="java.lang.String">
+            <column name="COLLEGE" />
+        </property>
+        <property name="filepath" type="java.lang.String">
+            <column name="FILEPATH" />
+        </property>
+    </class>
+</hibernate-mapping>

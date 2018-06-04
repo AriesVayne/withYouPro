@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-19 23:30:28 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.withyou.bean.repairinfo" table="T_REPAIRINFO">
+        <id name="uuid" type="java.lang.String">
+            <column name="UUID" />
+            <generator class="assigned" />
+        </id>
+        <property name="repairid" type="java.lang.String">
+            <column name="REPAIRID" />
+        </property>
+        <property name="uploadid" type="java.lang.String">
+            <column name="UPLOADID" />
+        </property>
+        <property name="realname" type="java.lang.String">
+            <column name="REALNAME" />
+        </property>
+        <property name="connphone" type="java.lang.String">
+            <column name="CONNPHONE" />
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+        <property name="device" type="java.lang.String">
+            <column name="DEVICE" />
+        </property>
+        <property name="repairdesc" type="java.lang.String">
+            <column name="REPAIRDESC" />
+        </property>
+        <property name="picture" type="java.lang.String">
+            <column name="PICTURE" />
+        </property>
+        <property name="uploadtime" type="java.lang.String">
+            <column name="UPLOADTIME" />
+        </property>
+        <property name="repairpeople" type="java.lang.String">
+            <column name="REPAIRPEOPLE" />
+        </property>
+        <property name="repairflag" type="java.lang.String">
+            <column name="REPAIRFLAG" />
+        </property>
+        <property name="feedback" type="java.lang.String">
+            <column name="FEEDBACK" />
+        </property>
+    </class>
+</hibernate-mapping>

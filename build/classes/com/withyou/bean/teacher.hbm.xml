@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-23 20:30:48 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.withyou.bean.teacher" table="T_TEACHER">
+        <id name="username" type="java.lang.String">
+            <column name="USERNAME" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="realname" type="java.lang.String">
+            <column name="REALNAME" />
+        </property>
+        <property name="college" type="java.lang.String">
+            <column name="COLLEGE" />
+        </property>
+        <property name="connphone" type="java.lang.String">
+            <column name="CONNPHONE" />
+        </property>
+    </class>
+</hibernate-mapping>
